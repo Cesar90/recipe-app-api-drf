@@ -13,3 +13,11 @@ docker-compose run app sh -c "django-admin.py startproject app ."
 # Run test and flake8
 
 docker-compose run app sh -c "python manage.py test && flake8"
+
+# Create core app
+
+docker-compose run app sh -c "python manage.py startapp core"
+
+# Run migrations just for core app
+
+docker-compose run app sh -c "python manage.py makemigrations core"
