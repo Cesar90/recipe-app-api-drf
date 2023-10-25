@@ -21,3 +21,7 @@ docker-compose run app sh -c "python manage.py startapp core"
 # Run migrations just for core app
 
 docker-compose run app sh -c "python manage.py makemigrations core"
+
+# Create superuser
+
+docker-compose run app sh -c "python manage.py createsuperuser"
