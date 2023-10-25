@@ -25,3 +25,7 @@ docker-compose run app sh -c "python manage.py makemigrations core"
 # Create superuser
 
 docker-compose run app sh -c "python manage.py createsuperuser"
+
+# Create new app and remove container
+
+docker-compose run --rm app sh -c "python manage.py startapp user"
