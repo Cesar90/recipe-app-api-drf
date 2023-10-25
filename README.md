@@ -2,6 +2,10 @@
 
 Recipe app api source code.
 
+# Install packages
+
+docker-compose build
+
 # Create project from docker-compose
 
 docker-compose run app sh -c "django-admin.py startproject app ."
